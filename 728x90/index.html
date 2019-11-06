@@ -23,14 +23,14 @@
 	    .btn{ position: absolute;top: 19px;right: 152px;}
 	    .header,.title,.muasp,.nhanqua,.btn{ opacity: 0; }
 	    .animate .header { -webkit-animation: fadeInDown1 0.6s ease-out 2.4s forwards ;  animation: fadeInDown1 0.6s ease-out 2.4s  forwards;}
-	    .animate .nhanqua { -webkit-animation: fadeInDown 3s ease-out 0.3s forwards ;  animation: fadeInDown 3s ease-out 0.3s  forwards;}
+	    .animate .nhanqua { -webkit-animation: fadeInDown 0.5 linear 1s forwards ;  animation: fadeInDown 0.5s linear 2s  forwards;}
 	    .animate .muasp { -webkit-animation: bounceIn 0.6s linear 0.5s forwards ;  animation: bounceIn 0.6s linear 0.5s  forwards;}
-	    .animate .title { -webkit-animation: fadeInUp 3s ease-out 0.3s forwards ;  animation: fadeInUp 3s ease-out 0.3s  forwards;}
+	    .animate .title { -webkit-animation: fadeInUp 0.5s ease-out 2s forwards ;  animation: fadeInUp 0.5s ease-out 2s  forwards;}
 		.animate .btn{-webkit-animation:zoomIn .6s linear 2.4s infinite;animation:zoomIn .6s linear 2.4s infinite}
 
 		@-webkit-keyframes fadeInDown1 {0% { opacity: 0;transform: translateY(-20px); }100% {opacity: 1;transform: translateY(0);}} @keyframes fadeInDown1 {0% { opacity: 0;transform: translateY(-20px); }100% {opacity: 1;transform: translateY(0);}}
 		@keyframes scale{50%{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1)}}
-		@-webkit-keyframes fadeInDown {0% { opacity: 0;transform: translateY(-20px); }100% {opacity: 1;transform: translateY(0);}} @keyframes fadeInDown {0% { opacity: 0;transform: translateY(-20px); }50% {opacity: 1;transform: translateY(0);}100%{opacity: 0; transition: none}}
+		@-webkit-keyframes fadeInDown {0% { opacity: 0;transform: translateY(-20px); }100% {opacity: 1;transform: translateY(0);}} @keyframes fadeInDown {0% { opacity: 0;transform: translateY(-20px); }50% {animation-delay: 2s; opacity: 1;transform: translateY(0);}100%{opacity: 0; transition: none}}
 	    @-webkit-keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}@keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}
 	    @-webkit-keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}@keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}
 	    @-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(80px)}100%{opacity:1;-webkit-transform:translateY(0)}}@keyframes fadeInUp{0%{opacity:0;transform:translateY(80px)}50%{opacity:1;transform:translateY(0)}100%{opacity: 0; transition: none}}
@@ -47,7 +47,7 @@
 		<span class="img title"><img src="images/title.png"></span>
 		<span class="img nhanqua"><img src="images/nhanqua.png"></span>
 		<span class="img header"><img src="images/muasp.png"></span>
-		<span class="img btn"><img src="images/btn.png"></span>
+		<span class="img btn"><a href="#"><img src="images/btn.png"></a></span>
 	</div>
 	<script type="text/javascript">
 	$(document).ready(function() {
