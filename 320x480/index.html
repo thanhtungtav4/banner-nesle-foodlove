@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=ad.size content="width=300,height=600">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<title></title>
+	<script type="text/javascript">
+    var clickTag = "#";
+    </script>
+    <style type="text/css">
+    	* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+    	html,body {margin: 0;padding: 0; background: transparent;}
+    	#stage {margin: 0 auto;position: relative;overflow: hidden;background: url("images/bg.png")}
+	    /*#stage.animate {background: #cd3328; transition: 0.1s;}*/
+	    img { max-width: 100%; display: inline-block; height: auto;}
+	    .img{display: flex;}
+		.muasp{padding-bottom: 50px}
+	    .img img {margin: 0 auto; display: inherit}
+	    /*.logo{position: absolute;top: 0;left: 25px}*/
+	    .content{text-align: center;     position: absolute;top: 26%;left: 0%;}
+	    /*.fleft{position: absolute;left: 0;bottom: 0}*/
+	    /*.fright{position: absolute;right: 0; bottom: 0}*/
+	    /*.content span{padding-bottom: 20px; display: inline-table;}*/
+	    .btn{margin-top: 10px}
+	    .main {
+	    	width: 320px;
+    		height: 240px;
+    		position: relative;
+	    }
+	    .muasp , .nhanqua ,.btn ,.iphone ,.product{
+	    	position: absolute;
+	    	width: 100%
+	    }
+	    .nhanqua ,.product {
+	    	top: 53%
+	    }
+	    .btn {
+	    	top: 82%
+	    }
+	    .logo,.header,.title,.muasp,.nhanqua,.btn,.fleft,.fright,.product,.iphone{ opacity: 0; }
+	    .animate .muasp { animation:  fadeInLeft 0.5s linear 1s forwards , fadeOutRight 0.5s linear 3.5s forwards}
+	    .animate .nhanqua {animation: fadeInRight 0.5s linear 1s forwards , fadeOutLeft 0.5s linear 3.5s forwards}
+	   	.animate .iphone {animation:  fadeInLeft 0.5s linear 3.5s forwards }
+	    .animate .product { animation: fadeInRight 0.5s linear 3.5s forwards }
+	    .animate .btn {
+	    	-webkit-animation: bounceIn  0.7s linear 3.5s, zoomIn 0.7s linear 3.9s infinite ;  
+	    	animation: bounceIn  0.7s linear 3.5s, zoomIn 0.7s linear 3.9s infinite ;
+	    	/*animation-iteration-count: infinite;*/
+	    }
+
+
+	    @keyframes fadeInLeft{0% , from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}
+
+		@keyframes fadeInRight{0% , from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}
+
+		@keyframes fadeOutLeft{from{opacity:1;transform:none;animation-duration: 5s;}to{opacity:1;transform:translate3d(-150%,0,0)}}
+
+		@keyframes fadeOutRight{0%,from{opacity:1;transform:translate3d(0,0,0)} 100%, to{opacity:0;transform:translate3d(150%,0,0);animation-duration: 5s;}}
+		@keyframes bounceIn { 0% {  opacity: 0; -webkit-transform: scale(.3) translate3d(0, 0, 0);transform: scale(.3) translate3d(0, 0, 0) }  50% {  opacity: .9; -webkit-transform: scale(1);transform: scale(1) } 100% { opacity: 1; -webkit-transform: scale(1) translate3d(0, 0, 0);transform: scale(1) translate3d(0, 0, 0)}}
+		@keyframes zoomIn{0%{opacity:1;transform:scale(1,1)}50%{opacity:1;transform:scale(1.1,1.1)}100%{opacity:1;transform:scale(1,1)}}
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript src=https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"></script>
+</head>
+<body>
+	<div id="stage" style="width: 320px; height: 480px">
+		<a id="link-run" href="javascript:window.open(window.clickTag)"></a>
+		<div class="content">
+			<div class="main">
+				<span class="img muasp"><img src="images/muasp.png"></span>
+				<span class="img nhanqua"><img src="images/nhanqua.png"></span>
+				<span class="img iphone"><img src="images/iPhone.png"></span>
+				<span class="img product"><img src="images/product.png"></span>
+				<span class="img btn"><img src="images/btn.png"></span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    $("#stage").addClass("animate");
+	});
+</script>
+</body>
+</html>
